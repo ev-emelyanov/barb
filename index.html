@@ -1,10 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
 	<meta charset="UTF-8">
 	<title>Main</title>
 </head>
-<body>
+<body class="main-page">
+
+<header class="main-header">
+	<nav class="main-navigation">
+		<a href="/">
+			<img class="main-navigation__logo" src="img/logo.png" alt="logo">
+		</a>
+		<div class="main-navigation__locator">главная</div>
+		<button class="main-navigation__toggler button">открыть меню</button>
+		<ul class="main-navigation__menu main-menu">
+			<li class="main-menu__item"><a href="/" class="main-menu__link">главная</a></li>
+			<li class="main-menu__item"><a href="#" class="main-menu__link">наши работы</a></li>
+			<li class="main-menu__item"><a href="#" class="main-menu__link">записаться</a></li>
+			<li class="main-menu__item"><a href="#" class="main-menu__link">контакты</a></li>
+			<li class="main-menu__item"><a href="#" class="main-menu__link">html academy</a></li>
+		</ul>
+		<ul class="main-navigation__user-block">
+			<li class="main-navigation__login"><a href="login.html">вход</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main class="main">
+	<h1 class="visibility-hidden">парикмахерская &laquo;барбершоп&raquo;</h1>
+	
+	<section class="main__stats stats">
+		<h2 class="stats__title">Стрижка у нас<br>
+		    это выгодно!</h2>
+		<p class="stats__lead">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+		<div class="stats__wrapper">
+			<ul class="stats__table">
+				<li class="stats__cell"><b class="stats__name">1 500 *</b><span class="stats__description">рублей вложений</span></li>
+				<li class="stats__cell"><b class="stats__name">7 200</b><span class="stats__description">секунд времени мастера</span></li>
+				<li class="stats__cell"><b class="stats__name">90 000</b><span class="stats__description">постриженных волос</span></li>
+				<li class="stats__cell"><b class="stats__name">500 000 *</b><span class="stats__description">лайков и комплиментов</span></li>
+			</ul>
+		</div>
+		<span class="stats__legend">* — приведённые данные ложь</span>
+	</section>
+	
+	<section class="main__advantages advantages">
+    <div class="advantages__wrapper slider">
+      <h2 class="visibility-hidden">наши преимущества</h2>
+      <ul class="advantages__list slider__list">
+        <li class="advantages__item advantages__item--fast slider__item">
+          <h3 class="advantages__title">быстро</h3>
+          <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+        </li>
+        <li class="advantages__item advantages__item--cool slider__item">
+          <h3 class="advantages__title">круто</h3>
+          <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино.
+                                             Во всяком случае внешне.
+          </p>
+        </li>
+        <li class="advantages__item advantages__item--expansive slider__item">
+          <h3 class="advantages__title">дорого</h3>
+          <p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+        </li>
+      </ul>
+      <div class="slider__toggler">
+        <button type="button" class="slider__toggle">1</button>
+        <button type="button" class="slider__toggle">2</button>
+        <button type="button" class="slider__toggle">3</button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="main__news news">
+    <h2 class="news__title">Новости и акции</h2>
+    <ul class="news__list">
+      <li class="news__item">
+        <p class="news__lead">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+        <time class="news__date" datetime="2017-09-29"><b class="news__day">29</b>сент</time>
+      </li>
+      <li class="news__item">
+        <p class="news__lead">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+        <time class="news__date" datetime="2017-09-19"><b class="news__day">19</b>сент</time>
+      </li>
+    </ul>
+    <a href="news.html" class="news__show-all button">показать все</a>
+  </section>
+  
+  <section class="main__review review">
+    <div class="review__wrapper slider">
+      <h2 class="review__title">Отзывы о нас</h2>
+      <ul class="review__list">
+        <li class="review__item">
+          <img src="img/review_1.jpg" alt="" class="review__pic">
+          <h3 class="review__author">Трэвис Баркер</h3>
+          <blockquote class="review__content">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</blockquote>
+        </li>
+        <li class="review__item">
+          <img src="img/review_2.jpg" alt="" class="review__pic">
+          <h3 class="review__author">Николай Петров</h3>
+          <blockquote class="review__content">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</blockquote>
+        </li>
+        <li class="review__item">
+          <img src="img/review_3.jpg" alt="" class="review__pic">
+          <h3 class="review__author">Василий Уткин</h3>
+          <blockquote class="review__content">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</blockquote>
+        </li>
+      </ul>
+      <div class="slider__toggler">
+        <button class="slider__toggle button">1</button>
+        <button class="slider__toggle button">2</button>
+        <button class="slider__toggle button">3</button>
+      </div>
+    </div>
+  </section>
+  
+</main>
+
+<footer class="footer">
+  <div class="footer__wrapper">
+    <section class="footer__address address">
+      <h2 class="address__title">Барбершоп Бородинский</h2>
+      <p class="address__detail">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+      <a href="tel:+78125556666" class="address__phone button">+7 (812) 555-66-66</a>
+    </section>
+    <section class="footer__socials socials">
+      <h2 class="visibility-hidden">Мы в социальных сетях</h2>
+      <ul class="socials__list">
+        <li class="socials__item"><a href="#" class="socials__button button social__button--vk">vkontakte</a></li>
+        <li class="socials__item"><a href="#" class="socials__button button social__button--fb">facebook</a></li>
+        <li class="socials__item"><a href="#" class="socials__button button social__button--ig">instagram</a></li>
+      </ul>
+    </section>
+  </div>
+  <section class="footer__developer developer">
+    <h2 class="developer__title">Разработано:</h2>
+    <a href="#" class="developer__link button">HTML ACADEMY</a>
+  </section>
+</footer>
 
 </body>
 </html>
